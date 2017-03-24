@@ -1,7 +1,14 @@
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/project-2');
 var Restaurant = require("./models/restaurant");
+var User = require("./models/user");
+
 mongoose.promise = global.Promise;
+
+User.remove({}, function(err) {
+    console.log(err);
+});
+
 Restaurant.remove({}, function(err) {
     console.log(err);
 });

@@ -5,15 +5,6 @@ var User = require('../models/user.js');
 var Restaurant = require('../models/restaurant.js');
 var authHelpers = require('../helpers/auth.js');
 
-//SHOW: create a GET "/" that displays all users on the index page
-// router.get('/', function(req, res) {
-//   Restaurant.find({})
-//   .exec(function(err, restaurants){
-//     if (err) { console.log(err); }
-//     res.render('users/index.hbs', { restaurants: restaurants });
-//   });
-// });
-
 
 //======================
 // INDEX RESTAURANTS
@@ -45,15 +36,15 @@ router.get("/:id", authHelpers.authorized, function(req, res) {
       });
     });
 
-  // Restaurant.find({})
-  //    .exec(function(err, restaurants) {
-  //        if(err) console.log(err);
-  //
-  //        console.log(restaurants);
-  //        res.render('users/show', {
-  //            restaurants: restaurants
-  //        });
-  //    });
+  Restaurant.find({})
+     .exec(function(err, restaurants) {
+         if(err) console.log(err);
+
+         console.log(restaurants);
+         res.render('users/show', {
+             restaurants: restaurants
+         });
+     });
 });
 
 //User registration

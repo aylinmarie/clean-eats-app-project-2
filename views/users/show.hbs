@@ -2,18 +2,20 @@
 
 
 <ul>
-	{{#each user.restaurant}}
+	{{#each restaurants}}
 
-		<li>Name: <a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit">{{this.name}}</a></li>
+		<li><a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit">{{this.name}}</a></li>
 		<li>Location: {{this.location}}</li>
 		<li>Type: {{this.type}}</li>
 
-		<form action="/users/{{../user.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
+		<!-- <form action="/users/{{../user.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
 			<input type="submit" value="Delete This">
-		</form>
+		</form> -->
 		<br>
 	{{/each}}
 </ul>
+
+<h3>Add Restaurant</h3>
 <form action="/users/{{user.id}}/restaurants" method="POST">
 	<div>
 		<label for="name">Name: </label>

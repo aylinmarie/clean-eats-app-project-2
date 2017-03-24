@@ -15,7 +15,7 @@ var users = require('./routes/users');
 var app = express();
 
 
-mongoose.connect('mongodb://localhost/auth');
+mongoose.connect('mongodb://localhost/project-2');
 var db = mongoose.connection;
 
 // Controllers
@@ -64,6 +64,6 @@ app.use(function(err, req, res, next) {
 
 app.use('/users', usersController);
 app.use('/sessions', sessionsController);
-app.use("/users/:userId/restaurants", restaurantsController);
+app.use('/users/:userId/restaurants', restaurantsController);
 
 module.exports = app;
