@@ -3,23 +3,21 @@ var Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
 
-var ListSchema = new Schema({
+var RestaurantSchema = new Schema({
   name: String,
-  completed: Boolean
+  location: String,
+  type: String
 })
 
 var UserSchema = new Schema({
   username: String,
   email: String,
   password_digest: String,
-  list: [ListSchema],
+  restaurant: [RestaurantSchema],
   created_at: Date,
   updated_at: Date
 });
 
-
-//add a ListSchema.pre function (just like UserSchema below)
-//your code
 
 UserSchema.pre('save', function(next) {
   now = new Date();
@@ -30,13 +28,13 @@ UserSchema.pre('save', function(next) {
 });
 
 var UserModel = mongoose.model('User', UserSchema);
-var ListModel = mongoose.model("List", ListSchema);
+var RestaurantModel = mongoose.model("Restaurant", RestaurantSchema);
 
 
 //your code
 
-//export List below
+//export below
 module.exports = {
   User: UserModel,
-  List: ListModel
+  Restaurant: RestaurantModel
 };

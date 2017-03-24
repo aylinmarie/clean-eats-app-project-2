@@ -1,8 +1,8 @@
-//require express, router, User Schema, List Schema, authHelpers
+//require express, router, User Schema, Restaurant Schema, authHelpers
 var express = require('express');
 router = express.Router();
 var User = require('../models/user.js');
-var List = require('../models/list.js');
+var Restaurant = require('../models/restaurant.js');
 var authHelpers = require('../helpers/auth.js');
 
 //SHOW: create a GET "/" that displays all users on the index page
@@ -33,7 +33,6 @@ router.get("/:id", authHelpers.authorized, function(req, res) {
 
 
 //User registration
-//Auth stuff: POST "/" save username, email, and password
 router.post('/', authHelpers.createSecure, function(req, res){
   var user = new User({
     email: req.body.email,
