@@ -1,24 +1,28 @@
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/project-2');
-var List = require("./models/list");
+var Restaurant = require("./models/restaurant");
 mongoose.promise = global.Promise;
-List.remove({}, function(err) {
+Restaurant.remove({}, function(err) {
     console.log(err);
 });
-var exercise = new List({
-    name: 'Exercise',
-    completed: 'true'
+
+var kaleMe = new Restaurant({
+    name: 'Kale Me Crazy',
+    location: 'Atlanta',
+    type: 'Juice Bar'
 });
-var laundery = new List({
-    name: 'Do Laundry',
-    completed: 'true'
+var hfBurger = new Restaurant({
+    name: 'H+F Burger',
+    location: 'Atlanta',
+    type: 'American'
 });
 
-exercise.save(function(err) {
+kaleMe.save(function(err) {
   if (err) console.log(err);
-  console.log('exercise created');
+  console.log('kale me crazy created');
 });
-laundry.save(function(err) {
+
+hfBurger.save(function(err) {
   if (err) console.log(err);
-  console.log('laundry created!');
+  console.log('h+f burger created!');
 });

@@ -8,10 +8,12 @@ var User = require('../models/user.js');
 var Restaurant = require('../models/restaurant.js');
 var authHelpers = require('../helpers/auth.js');
 
+
+
+
 //======================
 // CREATE
 //======================
-//create a POST "/" route that saves the restaurant item to the logged in user
 router.post("/", function(req, res) {
 	User.findById(req.params.userId)
 		.exec(function(err, user) {

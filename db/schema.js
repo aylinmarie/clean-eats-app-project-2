@@ -7,10 +7,12 @@ var RestaurantSchema = new Schema({
   name: String,
   location: String,
   type: String
-})
+});
+
 
 var UserSchema = new Schema({
-  username: String,
+  firstName: String,
+  lastName: String,
   email: String,
   password_digest: String,
   restaurant: [RestaurantSchema],
@@ -27,14 +29,14 @@ UserSchema.pre('save', function(next) {
   next();
 });
 
+var RestaurantModel = mongoose.model('Restaurant', RestaurantSchema);
 var UserModel = mongoose.model('User', UserSchema);
-var RestaurantModel = mongoose.model("Restaurant", RestaurantSchema);
 
 
 //your code
 
 //export below
 module.exports = {
-  User: UserModel,
-  Restaurant: RestaurantModel
+  Restaurant: RestaurantModel,
+  User: UserModel
 };
