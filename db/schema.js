@@ -7,7 +7,8 @@ var RestaurantSchema = new Schema({
   name: String,
   location: String,
   type: String,
-  imgUrl: String
+  imgUrl: String,
+  description: String
 });
 
 

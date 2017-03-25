@@ -1,5 +1,6 @@
-<h1> welcome {{user.firstName}}</h1>
-<h3>personalize your restaurants to fit your needs</h3>
+<h1> welcome {{user.firstName}} !</h1>
+<h4>personalize your restaurants to fit your needs</h4>
+<hr>
 <ul>
 	{{#each user.restaurant}}
 
@@ -21,12 +22,14 @@
 		<li>Location: {{this.location}}</li>
 		<li>Type: {{this.type}}</li>
 
-		<form action="/users/{{user.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
+		<form action="/users/{{../user.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
 			<input type="submit" value="Delete This">
 		</form>
 		<br>
 	{{/each}}
 </ul>
+
+<hr>
 
 <h3>Add Restaurant</h3>
 <form action="/users/{{user.id}}/restaurants" method="POST">
@@ -41,6 +44,14 @@
 	<div>
 		<label for="type">Type:</label>
 		<input type="text" name="type">
+	</div>
+	<div>
+		<label for="imgUrl">Image URL:</label>
+		<input type="text" name="imgUrl">
+	</div>
+	<div>
+		<label for="description">Description:</label>
+		<input type="text" name="description">
 	</div>
 	<div>
 		<input type="submit" value="Add To Restaurant">

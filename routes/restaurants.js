@@ -35,14 +35,22 @@ router.post('/', function(req, res) {
 // EDIT RESTAURANT
 //======================
 router.get('/:id/edit', function(req, res) {
+
+	User.findById(req.params.userId)
+       .exec(function(err, user) {
+         if (err) { console.log("Oops, You are not authorized!"); }
+
+
 	Restaurant.findById(req.params.id)
 		.exec(function(err, restaurant) {
 			if (err) { console.log(err); }
 			res.render('restaurants/edit', {
 				restaurant: restaurant,
-				user: req.params.userId
+				user: user
 			});
-		});
+	});
+
+			});
 });
 
 //======================

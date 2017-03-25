@@ -1,4 +1,13 @@
 <h2>Edit this Item</h2>
+
+<div>
+<img src="{{restaurant.imgUrl}}" width="300px">
+<br>
+<p>{{restaurant.description}}</p>
+<div>
+
+<hr>
+
 <form action="/users/{{user.id}}/restaurants/{{restaurant.id}}?_method=PUT" method="POST">
 	<div>
 		<label for="name">Name: </label>
@@ -13,10 +22,18 @@
 		<input type="text" name="type" value="{{restaurant.type}}">
 	</div>
 	<div>
+		<label for="imgUrl">Image URL:</label>
+		<input type="text" name="imgUrl" value="{{restaurant.imgUrl}}">
+	</div>
+	<div>
+		<label for="description">Description:</label>
+		<input type="text" name="description" value="{{restaurant.description}}">
+	</div>
+	<div>
 		<input type="submit" value="Update Restaurant">
 	</div>
 </form>
 
-<form action="/users/{{../restaurant.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
-	<input type="submit" value="Delete This">
+<form action="/users/{{user.id}}" class="btn">
+	<input type="submit" value="Go Back">
 </form>
