@@ -14,7 +14,7 @@ var authHelpers = require('../helpers/auth.js');
 //======================
 // CREATE
 //======================
-router.post("/", function(req, res) {
+router.post('/', function(req, res) {
 	User.findById(req.params.userId)
 		.exec(function(err, user) {
 			if (err) { console.log(err); }
@@ -32,14 +32,13 @@ router.post("/", function(req, res) {
 });
 
 //======================
-// EDIT
+// EDIT RESTAURANT
 //======================
-//create a GET "/:id/edit" route that renders the restaurant's edit page
-router.get("/:id/edit", function(req, res) {
+router.get('/:id/edit', function(req, res) {
 	Restaurant.findById(req.params.id)
 		.exec(function(err, restaurant) {
 			if (err) { console.log(err); }
-			res.render("restaurants/edit", {
+			res.render('restaurants/edit', {
 				restaurant: restaurant,
 				user: req.params.userId
 			});
@@ -50,7 +49,7 @@ router.get("/:id/edit", function(req, res) {
 // UPDATE
 //======================
 //create a PUT "/:id" route that saves the changes from the restaurant.
-router.put("/:id", function(req, res) {
+router.put('/:id', function(req, res) {
 	Restaurant.findById(req.params.id)
 		.exec(function(err, restaurant) {
 			if (err) { console.log(err); }
@@ -75,7 +74,7 @@ router.put("/:id", function(req, res) {
 // DELETE
 //======================
 //create a DELETE "/:id" route that deletes the restaurant item
-router.delete("/:id", function(req, res) {
+router.delete('/:id', function(req, res) {
 	User.findByIdAndUpdate(req.params.userId, {
 		$pull: {
 			restaurant: {_id: req.params.id}

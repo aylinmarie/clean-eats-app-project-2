@@ -1,16 +1,28 @@
-<h1>Welcome Back {{user.firstName}}!</h1>
-
 
 <ul>
-	{{#each restaurants}}
+	{{#each user.restaurant}}
 
 		<li><a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit">{{this.name}}</a></li>
 		<li>Location: {{this.location}}</li>
 		<li>Type: {{this.type}}</li>
 
-		<!-- <form action="/users/{{../user.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
+		<form action="/users/{{../user.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
 			<input type="submit" value="Delete This">
-		</form> -->
+		</form>
+		<br>
+	{{/each}}
+</ul>
+
+<ul>
+	{{#each restaurants}}
+
+		<li><a href="/users/{{user.id}}/restaurants/{{this.id}}/edit">{{this.name}}</a></li>
+		<li>Location: {{this.location}}</li>
+		<li>Type: {{this.type}}</li>
+
+		<form action="/users/{{user.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
+			<input type="submit" value="Delete This">
+		</form>
 		<br>
 	{{/each}}
 </ul>

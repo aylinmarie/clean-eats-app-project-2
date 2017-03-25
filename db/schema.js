@@ -15,7 +15,7 @@ var UserSchema = new Schema({
   lastName: String,
   email: { type: String, required: true, unique: true },
   password_digest: String,
-  // restaurant: [RestaurantSchema],
+  restaurant: [RestaurantSchema],
   created_at: Date,
   updated_at: Date
 });
