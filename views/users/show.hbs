@@ -23,7 +23,7 @@
 		<li>Type: {{this.type}}</li>
 
 		<form action="/users/{{../user.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
-			<input type="submit" value="Delete This">
+			<input class="btn btn-danger" type="submit" value="Delete This">
 		</form>
 		<br>
 	{{/each}}
@@ -54,6 +54,6 @@
 		<input type="text" name="description">
 	</div>
 	<div>
-		<input type="submit" value="Add To Restaurant">
+		<input class="btn btn-primary" type="submit" value="Add To Restaurant">
 	</div>
 </form>

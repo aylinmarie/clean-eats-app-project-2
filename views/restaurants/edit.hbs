@@ -30,10 +30,16 @@
 		<input type="text" name="description" value="{{restaurant.description}}">
 	</div>
 	<div>
-		<input type="submit" value="Update Restaurant">
+		<input class="btn btn-warning" type="submit" value="Update Restaurant">
 	</div>
 </form>
 
+<form action="/users/{{user.id}}/restaurants/{{restaurant.id}}?_method=DELETE" method="POST">
+	<input class="btn btn-danger" type="submit" value="Delete This">
+</form>
+
+<hr>
+
 <form action="/users/{{user.id}}" class="btn">
-	<input type="submit" value="Go Back">
+	<input class="btn btn-default" type="submit" value="Go Back">
 </form>
