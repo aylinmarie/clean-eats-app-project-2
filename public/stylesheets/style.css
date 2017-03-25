@@ -1,5 +1,12 @@
+html {
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
 body {
-  padding: 50px;
+  padding: 50px 0px 50px 0px;
   font-family: sans-serif;
   text-align: center;
 }
@@ -34,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .1em;
 }
 
-div.row {
-  display: inline;
+nav {
+  background: #eeeeee;
+  margin: 0 auto;
 }
