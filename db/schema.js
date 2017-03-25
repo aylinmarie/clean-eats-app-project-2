@@ -6,7 +6,8 @@ mongoose.Promise = global.Promise;
 var RestaurantSchema = new Schema({
   name: String,
   location: String,
-  type: String
+  type: String,
+  imgUrl: String
 });
 
 

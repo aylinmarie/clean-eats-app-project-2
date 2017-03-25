@@ -10,15 +10,17 @@
   </head>
   <body>
     <nav>
-      <ul>
-        <li><a href="/users/signup">signup</a> | </li>
-        <li><a href="/sessions/login">login</a> | </li>
-        <li>
-          <form method="post" action="/sessions?_method=DELETE">
+          <form action="/users/signup" class="btn">
+            <input type="submit" value="Sign Up">
+          </form>
+
+          <form action="/sessions/login" class="btn">
+            <input type="submit" value="Login">
+          </form>
+
+          <form method="post" action="/sessions?_method=DELETE" class="btn">
             <input type="submit" value="logout">
           </form>
-        </li>
-      </ul>
     </nav>
     <a href="/users"><h1 id="main-heading">Clean Eats</h1></a>
     {{{body}}}

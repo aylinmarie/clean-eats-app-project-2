@@ -1,4 +1,5 @@
-
+<h1> welcome {{user.firstName}}</h1>
+<h3>personalize your restaurants to fit your needs</h3>
 <ul>
 	{{#each user.restaurant}}
 
@@ -16,7 +17,7 @@
 <ul>
 	{{#each restaurants}}
 
-		<li><a href="/users/{{user.id}}/restaurants/{{this.id}}/edit">{{this.name}}</a></li>
+		<li><a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit">{{this.name}}</a></li>
 		<li>Location: {{this.location}}</li>
 		<li>Type: {{this.type}}</li>
 

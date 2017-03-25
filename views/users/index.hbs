@@ -2,8 +2,12 @@
 <br>
 <h4>Atlanta</h4>
 <br>
-<ul>
+<div class="row restaurant-list-item">
 	{{#each restaurants}}
+		<br>
     {{this.name}}
+		<br>
+		<img src="{{this.imgUrl}}" width="300px">
     <br>
 	{{/each}}
+</div>

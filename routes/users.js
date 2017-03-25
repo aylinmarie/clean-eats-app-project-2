@@ -30,23 +30,21 @@ router.get('/signup', function(req, res){
 //SHOW: shows the page ONLY IF it's the current user's session.
 router.get('/:id', authHelpers.authorized, function(req, res, next) {
 
-    User.findById(req.params.id)
-      .exec(function(err, user) {
-        if (err) { console.log("Oops, You are not authorized!"); }
-        res.render("users/show", {
-          user: user
+  User.findById(req.params.id)
+       .exec(function(err, user) {
+         if (err) { console.log("Oops, You are not authorized!"); }
+
+  Restaurant.find({})
+        .exec(function(err, restaurants) {
+            if(err) console.log(err);
+            console.log(restaurants, user);
+            res.render('users/show', {
+              restaurants: restaurants,
+              user: user
+            });
         });
-    });
 
-    Restaurant.find({})
-     .exec(function(err, restaurants) {
-         if(err) console.log(err);
-         console.log(restaurants);
-         res.render('users/show', {
-           restaurants: restaurants
-         });
-     });
-
+      });
 });
 
 //User registration
