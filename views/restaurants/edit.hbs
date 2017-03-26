@@ -1,5 +1,6 @@
-<h2>Edit this Item</h2>
-
+<h2>{{restaurant.name}}</h2>
+<h5>Restaurant Profile</h5>
+<br>
 <div>
 <img src="{{restaurant.imgUrl}}" width="300px">
 <br>
@@ -7,6 +8,8 @@
 <div>
 
 <hr>
+
+<h5>Have changes?</h5>
 
 <form action="/users/{{user.id}}/restaurants/{{restaurant.id}}?_method=PUT" method="POST">
 	<div>

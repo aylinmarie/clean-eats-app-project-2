@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  padding: 50px 0px 50px 0px;
+  padding: 0px;
   font-family: sans-serif;
   text-align: center;
 }
@@ -17,6 +17,10 @@ a {
 
 ol, ul {
   list-style-type: none;
+}
+
+p {
+  padding: 8px;
 }
 
 form.btn input, .btn {
@@ -44,4 +48,13 @@ h1, h2, h3, h4, h5, h6 {
 nav {
   background: #eeeeee;
   margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  margin-top: 40px;
+  text-transform: uppercase !important;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: .15em;
 }
