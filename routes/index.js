@@ -8,15 +8,10 @@ var authHelpers = require('../helpers/auth.js');
 //======================
 // HOMEPAGE
 //======================
-router.get('/', function(req, res) {
-    User.find({})
-        .exec(function(err, user) {
-            if(err) console.log(err);
-            console.log(user);
-            res.render('index');
-        });
-});
 
+router.get('/', function(req, res) {
+    res.render('index', {layout: false});
+});
 
 //======================
 // ABOUT PAGE
