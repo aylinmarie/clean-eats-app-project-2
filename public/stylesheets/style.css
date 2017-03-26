@@ -9,6 +9,7 @@ body {
   padding: 0px;
   font-family: sans-serif;
   text-align: center;
+  min-width: 400px;
 }
 
 a {
@@ -24,6 +25,28 @@ p {
 
 .container-fluid {
   padding: 40px;
+}
+
+.logo {
+  text-align: left;
+}
+
+.actions form{
+  text-align: right;
+  float: right;
+  display: inline;
+  center-y: == ::window[center-y];
+  size: == ::[intrinsic-size];
+}
+
+.actions {
+  height: 100px;
+  top: 30px;
+  }
+
+.actions input.btn:hover, .btn-default:hover {
+  border: 1px solid #166b24;
+  color: #166b24;
 }
 
 form.btn input {
