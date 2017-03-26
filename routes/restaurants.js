@@ -9,8 +9,6 @@ var Restaurant = require('../models/restaurant.js');
 var authHelpers = require('../helpers/auth.js');
 
 
-
-
 //======================
 // CREATE
 //======================

@@ -10,7 +10,6 @@ var authHelpers = require('../helpers/auth.js');
 // INDEX RESTAURANTS
 //======================
 router.get('/', function(req, res) {
-    // res.send('authors will be here');
     Restaurant.find({})
         .exec(function(err, restaurants) {
             if(err) console.log(err);
@@ -50,7 +49,9 @@ router.get('/:id', /*authHelpers.authorized,*/ function(req, res, next) {
       });
 });
 
-//User registration
+//======================
+// USER REGISTRATION
+//======================
 router.post('/', /*authHelpers.createSecure,*/ function(req, res){
   var user = new User({
     email: req.body.email,

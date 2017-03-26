@@ -57,12 +57,13 @@ nav {
 }
 
 footer, footer a {
-  margin-top: 40px;
+  margin: 0 auto;
   text-transform: uppercase !important;
   font-weight: bold;
   font-size: 10px;
   letter-spacing: .15em;
   background: #eeeeee;
+
 }
 
 .btn-website {
@@ -85,8 +86,8 @@ div.restaurant-list-item.row {
 
 
 .homepage {
-  background-image: url("https://source.unsplash.com/FB6vPHbTo7I");
-  height: 800px;
+  background-image: url("https://source.unsplash.com/d825JrXvun8");
+  height: 750px;
   width: 100%;
   margin: 0 auto;
   padding: 0px;
