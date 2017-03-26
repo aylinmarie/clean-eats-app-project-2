@@ -18,20 +18,36 @@ a {
   letter-spacing: .15em;
 }
 
-ol, ul {
-  list-style-type: none;
-}
-
 p {
   padding: 8px;
 }
 
-form.btn input, .btn {
+.container-fluid {
+  padding: 40px;
+}
+
+form.btn input {
   text-transform: uppercase !important;
   font-weight: bold;
   font-size: 10px;
   letter-spacing: .1em;
   padding: 10px 50px 10px 50px;
+
+}
+
+.list {
+  padding-top: 40px;
+  list-style-type: none;
+
+}
+
+.btn {
+  text-transform: uppercase !important;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: .1em;
+  padding: 10px;
+  width: 150px;
 }
 
 input {
@@ -41,12 +57,14 @@ input {
   letter-spacing: .15em;
   padding: 5px 0px 5px 0px;
   margin: 10px;
+  width: 300px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase !important;
   font-weight: bold;
   letter-spacing: .1em;
+  margin: 5px;
 }
 
 nav {
@@ -65,6 +83,9 @@ footer, footer a {
   background: #eeeeee;
 
 }
+footer {
+  padding: 50px;
+}
 
 .btn-website {
   background-color: #166b24;
@@ -72,7 +93,7 @@ footer, footer a {
 }
 
 hr {
-  margin: 50px
+  margin: 10px
 }
 
 div.restaurant-list-item.row {

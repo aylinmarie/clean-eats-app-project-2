@@ -1,9 +1,13 @@
+<div class="container-fluid show">
+
+
 <h1> welcome {{user.firstName}} !</h1>
 <h4>personalize your restaurants to fit your needs</h4>
+<div class="container-fluid top-show">
 <hr>
 
-<div class="list">
-<ul>
+<div class="container-fluid list">
+
 	<h6>{{#each restaurants}}</h6>
 
 		<li><a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit">{{this.name}}</a></li>
@@ -15,10 +19,13 @@
 		</form>
 		<br>
 	{{/each}}
-</ul>
+
+</div>
 </div>
 
 <hr>
+
+<div class="container-fluid add-rest">
 
 <h3>Add Restaurant</h3>
 <form action="/users/{{user.id}}/restaurants" method="POST">
@@ -46,3 +53,6 @@
 		<input class="btn btn-primary" type="submit" value="Add To Restaurant">
 	</div>
 </form>
+
+</div>
+</div>

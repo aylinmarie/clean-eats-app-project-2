@@ -1,7 +1,10 @@
+<div class="container-fluid">
+
+<div class="container-fluid top-edit">
 <h2>{{restaurant.name}}</h2>
 <h5>Restaurant Profile</h5>
 <br>
-<div>
+
 <img src="{{restaurant.imgUrl}}" width="300px">
 <br>
 <p>{{restaurant.description}}</p>
@@ -10,11 +13,13 @@
 		<input class="btn btn-website" type="submit" value="Visit Website">
 	</form>
 
-	<form action="/users/{{user.id}}" class="btn">
+	<form action="/users/{{user.id}}">
 		<input class="btn btn-default" type="submit" value="Go Back">
 	</form>
 
+</div>
 <hr>
+<div class="container-fluid">
 
 <h5>Have changes?</h5>
 
@@ -47,3 +52,7 @@
 <form action="/users/{{user.id}}/restaurants/{{restaurant.id}}?_method=DELETE" method="POST">
 	<input class="btn btn-danger" type="submit" value="Delete This">
 </form>
+
+</div>
+
+</div>
