@@ -128,12 +128,65 @@ div.restaurant-list-item.row {
   width: 100%;
 }
 
-
-.homepage {
+.homepage.bg {
   background-image: url("https://source.unsplash.com/d825JrXvun8");
   height: 750px;
   width: 100%;
   margin: 0 auto;
   padding: 0px;
   background-size: cover;
+  background-position: center center;
+  opacity: .3;
+  z-index: -1;
+  position: absolute;
+}
+
+.homepage-header, .homepage h2 {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+  margin: 150px 0px 400px 0px;
+}
+
+.atlanta.bg {
+  background-image: url("https://source.unsplash.com/4AS6y6UH70s");
+  height: 350px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+  background-size: cover;
+  background-position: center center;
+  opacity: .3;
+  z-index: -1;
+  position: absolute;
+}
+
+.atlanta-header, .atlanta h2 {
+  position: relative;
+  line-height: 350px;
+  opacity: 1;
+  z-index: 1;
+  margin: 150px 0px 150px 0px;
+}
+
+
+.nyc.bg {
+  background-image: url("https://source.unsplash.com/P8zDQz8Y2Vc");
+  height: 350px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+  background-size: cover;
+  background-position: center center;
+  opacity: .3;
+  z-index: -1;
+  position: absolute;
+}
+
+.nyc-header, .nyc h2 {
+  position: relative;
+  line-height: 350px;
+  opacity: 1;
+  z-index: 1;
+  margin: 150px 0px 150px 0px;
 }
