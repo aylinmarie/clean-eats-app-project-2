@@ -18,4 +18,17 @@ router.get('/', function(req, res) {
 });
 
 
+//======================
+// ABOUT PAGE
+//======================
+router.get('/about', function(req, res) {
+    User.find({})
+        .exec(function(err, user) {
+            if(err) console.log(err);
+            console.log(user);
+            res.render('about');
+        });
+});
+
+
 module.exports = router;
