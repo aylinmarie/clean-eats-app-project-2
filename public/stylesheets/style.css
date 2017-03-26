@@ -12,7 +12,10 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #166b24;
+  text-transform: uppercase !important;
+  font-weight: bold;
+  letter-spacing: .15em;
 }
 
 ol, ul {
@@ -35,6 +38,7 @@ input {
   text-transform: uppercase !important;
   font-weight: bold;
   font-size: 10px;
+  letter-spacing: .15em;
   padding: 5px 0px 5px 0px;
   margin: 10px;
 }
@@ -46,15 +50,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav {
-  background: #eeeeee;
   margin: 0 auto;
   padding: 20px;
+  background: #eeeeee;
+
 }
 
-footer {
+footer, footer a {
   margin-top: 40px;
   text-transform: uppercase !important;
   font-weight: bold;
   font-size: 10px;
   letter-spacing: .15em;
+  background: #eeeeee;
+}
+
+.btn-website {
+  background-color: #166b24;
+  color: white;
+}
+
+hr {
+  margin: 50px
+}
+
+div.restaurant-list-item.row {
+  display: inline-block;
+  padding: 50px;
+  text-transform: uppercase !important;
+  font-weight: bold;
+  letter-spacing: .15em;
+  width: 100%;
+}
+
+
+.homepage {
+  background-image: url("https://source.unsplash.com/FB6vPHbTo7I");
+  height: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+  background-size: cover;
 }

@@ -22,6 +22,8 @@ var db = mongoose.connection;
 var usersController = require('./routes/users.js');
 var sessionsController = require('./routes/sessions.js');
 var restaurantsController = require("./routes/restaurants.js");
+var indexController = require("./routes/index.js");
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -65,5 +67,7 @@ app.use(function(err, req, res, next) {
 app.use('/users', usersController);
 app.use('/sessions', sessionsController);
 app.use('/users/:userId/restaurants', restaurantsController);
+app.use('/', indexController);
+
 
 module.exports = app;

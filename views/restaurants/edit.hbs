@@ -5,7 +5,14 @@
 <img src="{{restaurant.imgUrl}}" width="300px">
 <br>
 <p>{{restaurant.description}}</p>
-<div>
+
+	<form action="">
+		<input class="btn btn-website" type="submit" value="Visit Website">
+	</form>
+
+	<form action="/users/{{user.id}}" class="btn">
+		<input class="btn btn-default" type="submit" value="Go Back">
+	</form>
 
 <hr>
 
@@ -39,10 +46,4 @@
 
 <form action="/users/{{user.id}}/restaurants/{{restaurant.id}}?_method=DELETE" method="POST">
 	<input class="btn btn-danger" type="submit" value="Delete This">
-</form>
-
-<hr>
-
-<form action="/users/{{user.id}}" class="btn">
-	<input class="btn btn-default" type="submit" value="Go Back">
 </form>

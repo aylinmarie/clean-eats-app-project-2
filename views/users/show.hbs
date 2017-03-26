@@ -2,12 +2,13 @@
 <h4>personalize your restaurants to fit your needs</h4>
 <hr>
 
+<div class="list">
 <ul>
-	{{#each restaurants}}
+	<h6>{{#each restaurants}}</h6>
 
 		<li><a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit">{{this.name}}</a></li>
-		<li>Location: {{this.location}}</li>
-		<li>Type: {{this.type}}</li>
+		<li><b>Location:</b> {{this.location}}</li>
+		<li><b>Type:</b> {{this.type}}</li>
 
 		<form action="/users/{{../user.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
 			<input class="btn btn-danger" type="submit" value="Delete This">
@@ -15,6 +16,7 @@
 		<br>
 	{{/each}}
 </ul>
+</div>
 
 <hr>
 
