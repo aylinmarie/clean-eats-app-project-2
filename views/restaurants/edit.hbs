@@ -1,6 +1,13 @@
 <div class="container-fluid">
 
-<div class="container-fluid top-edit">
+<div class="container top-edit">
+
+	<ol class="breadcrumb">
+	  <li><a href="/users">Home</a></li>
+	  <li><a href="/users/{{user.id}}">Restaurants</a></li>
+	  <li class="active">{{restaurant.name}}</li>
+	</ol>
+
 <h2>{{restaurant.name}}</h2>
 <h5>Restaurant Profile</h5>
 <br>
