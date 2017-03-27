@@ -56,7 +56,7 @@ var juiceBar = new Restaurant({
     name: 'Juice Bar Suwanee',
     location: 'Atlanta',
     type: 'Juice Bar',
-    imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/wXXg3_CVlZ32r3POL-eduA/o.jpg',
+    imgUrl: 'https://source.unsplash.com/iQISyMFR0RM',
     description: 'Juice Bar is overwhelmingly vegetarian, gluten-free, organic when possible, and always uses 100% whole fruits and vegetables.'
 });
 
@@ -64,15 +64,15 @@ var seasons52 = new Restaurant({
     name: 'Seasons 52',
     location: 'Atlanta',
     type: 'American',
-    imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/wXXg3_CVlZ32r3POL-eduA/o.jpg',
+    imgUrl: 'http://restaurantweek.shopcoralgables.com/wp-content/uploads/2015/04/Seasons-52-011.jpg',
     description: 'Rotating menu of seasonal American dishes alongside international wines in an upscale setting.'
 });
 
 var rthomas = new Restaurant({
-    name: 'R. Thomas',
+    name: 'R. Thomas Grill',
     location: 'Atlanta',
     type: 'American',
-    imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/wXXg3_CVlZ32r3POL-eduA/o.jpg',
+    imgUrl: 'https://cdnblog.rentcafe.com/blog/wp-content/uploads/2012/09/r.-thomas-e1348148822585.jpg',
     description: 'Funky outdoor spot open 24/7 for organic menu of burgers & vegetarian fare amid greenery & birds.'
 });
 
