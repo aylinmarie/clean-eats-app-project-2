@@ -5,13 +5,42 @@
 
 
 <div class="container-fluid restaurant-list-item row">
-		{{#each restaurants}}
+
+		<div class="col col-md-3">
+			{{restaurants.0.name}}<br>
+			<img src="{{restaurants.0.imgUrl}}" width="300px">
+		</div>
+		<div class="col col-md-3">
+			{{restaurants.1.name}}<br>
+			<img src="{{restaurants.1.imgUrl}}" width="300px">
+		</div>
+		<div class="col col-md-3">
+			{{restaurants.2.name}}<br>
+			<img src="{{restaurants.2.imgUrl}}" width="300px">
+		</div>
+		<div class="col col-md-3">
+			{{restaurants.3.name}}<br>
+			<img src="{{restaurants.3.imgUrl}}" width="300px">
+		</div>
+		<div class="col col-md-3">
+			{{restaurants.4.name}}<br>
+			<img src="{{restaurants.4.imgUrl}}" width="300px">
+		</div>
+		<div class="col col-md-3">
+			{{restaurants.5.name}}<br>
+			<img src="{{restaurants.5.imgUrl}}" width="300px">
+		</div>
+
+
+
+
+		<!-- {{#each restaurants}}
 			<br>
 			{{this.name}}
 			<br>
 			<img src="{{this.imgUrl}}" width="300px">
 			<br>
-		{{/each}}
+		{{/each}} -->
 </div>
 
 <hr>

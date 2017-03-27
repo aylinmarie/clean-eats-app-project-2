@@ -199,6 +199,14 @@ div.restaurant-list-item.row {
   border-radius: 20px;
 }
 
+.restaurant-list-item .col {
+  padding: 0px 0px 50px 0px;
+}
+
+.restaurant-list-item .col:hover {
+  opacity: .5;
+}
+
 .atlanta.bg {
   background-image: url("https://source.unsplash.com/4AS6y6UH70s");
   height: 350px;

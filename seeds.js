@@ -56,7 +56,7 @@ var desta = new Restaurant({
     name: 'Desta Ethiopian',
     location: 'Atlanta',
     type: 'Ethiopian',
-    imgUrl: 'https://images.guestinnovations.com/7c08ebe7-7cda-49c2-9f1e-57196c5719ec/crop-to-aspect,1.3;downsample-to-fit,466,355;.jpg?signer=restaurateur&signature=XhVioFxWx%2BP551TzHGQlE2J4UEAaHjAg2gAUlRkf6eo%3D',
+    imgUrl:'https://images.guestinnovations.com/7c08ebe7-7cda-49c2-9f1e-57196c5719ec/crop-to-aspect,1.3;downsample-to-fit,466,355;.jpg?signer=restaurateur&signature=XhVioFxWx%2BP551TzHGQlE2J4UEAaHjAg2gAUlRkf6eo%3D',
     description: 'Popular Ethiopian spot offering a variety of exotic dishes, including ample vegetarian options.'
 });
 
