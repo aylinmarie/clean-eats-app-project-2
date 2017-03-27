@@ -26,6 +26,10 @@ mongoose.connection.once('open', function() {
 
 // DATA
 
+// User.remove({}, function(err) {
+//     console.log(err);
+// });
+
 Restaurant.remove({}, function(err) {
     console.log(err);
 });
@@ -36,7 +40,7 @@ var kaleMe = new Restaurant({
     type: 'Juice Bar',
     imgUrl: 'http://www.atlbucketlist.com/wp-content/uploads/2016/01/KMCreview-slideshow.jpg',
     description: 'Kale Me Crazy is a superfood café. We offer juices, smoothies, salads, and wraps in a sleek, upscale environment.',
-    food: ['Vegan', ' Vegetarian']
+    food: 'Vegan, Vegetarian'
 });
 
 var herbanFix = new Restaurant({
@@ -45,7 +49,7 @@ var herbanFix = new Restaurant({
     type: 'Pan Asian',
     imgUrl: 'http://herbanfix.com/wp-content/uploads/2015/05/menu-top4.jpg',
     description: 'Herban Fix is an Atlanta vegan restaurant located in Midtown Atlanta and we are cuisine enthusiasts that want to share amazing vegan food with you.',
-    food: ['Vegan', ' Vegetarian']
+    food: 'Vegan, Vegetarian'
 });
 
 var trueFood = new Restaurant({
@@ -54,7 +58,7 @@ var trueFood = new Restaurant({
     type: 'Variety',
     imgUrl: 'http://www.truefoodkitchen.com/wp-content/uploads/2013/03/mg_90501.jpg',
     description: 'Relaxed, eco-chic chain serving health-conscious fare, including vegan options, plus cocktails.',
-    food: ['Vegan', ' Vegetarian']
+    food: 'Vegan, Vegetarian, Paleo'
 });
 
 var desta = new Restaurant({
@@ -63,7 +67,7 @@ var desta = new Restaurant({
     type: 'Ethiopian',
     imgUrl:'https://images.guestinnovations.com/7c08ebe7-7cda-49c2-9f1e-57196c5719ec/crop-to-aspect,1.3;downsample-to-fit,466,355;.jpg?signer=restaurateur&signature=XhVioFxWx%2BP551TzHGQlE2J4UEAaHjAg2gAUlRkf6eo%3D',
     description: 'Popular Ethiopian spot offering a variety of exotic dishes, including ample vegetarian options.',
-    food: ['Vegan', ' Vegetarian']
+    food: 'Vegan, Vegetarian'
 });
 
 var urbanpl8 = new Restaurant({
@@ -72,7 +76,7 @@ var urbanpl8 = new Restaurant({
     type: 'American',
     imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/wXXg3_CVlZ32r3POL-eduA/o.jpg',
     description: 'Food stall serving health-conscious, paleo & gluten-free American dishes with global flavors.',
-    food: ['Vegan', ' Vegetarian']
+    food: 'Vegan, Vegetarian'
 });
 
 var juiceBar = new Restaurant({
@@ -81,7 +85,7 @@ var juiceBar = new Restaurant({
     type: 'Juice Bar',
     imgUrl: 'https://source.unsplash.com/iQISyMFR0RM',
     description: 'Juice Bar is overwhelmingly vegetarian, gluten-free, organic when possible, and always uses 100% whole fruits and vegetables.',
-    food: ['Vegan', ' Vegetarian']
+    food: 'Vegan, Vegetarian'
 });
 
 var seasons52 = new Restaurant({
@@ -90,7 +94,7 @@ var seasons52 = new Restaurant({
     type: 'American',
     imgUrl: 'http://restaurantweek.shopcoralgables.com/wp-content/uploads/2015/04/Seasons-52-011.jpg',
     description: 'Rotating menu of seasonal American dishes alongside international wines in an upscale setting.',
-    food: ['Vegan', ' Vegetarian']
+    food: 'Vegan, Vegetarian'
 });
 
 var rthomas = new Restaurant({
@@ -99,7 +103,7 @@ var rthomas = new Restaurant({
     type: 'American',
     imgUrl: 'https://cdnblog.rentcafe.com/blog/wp-content/uploads/2012/09/r.-thomas-e1348148822585.jpg',
     description: 'Funky outdoor spot open 24/7 for organic menu of burgers & vegetarian fare amid greenery & birds.',
-    food: ['Vegan', ' Vegetarian']
+    food: 'Vegan, Vegetarian'
 });
 
 

@@ -21,6 +21,7 @@ router.post('/', function(req, res) {
 				name: req.body.name,
 				location: req.body.location,
 				type: req.body.type,
+				description: req.body.description,
 				imgUrl: req.body.imgUrl,
 				food: req.body.food
 			});
@@ -53,17 +54,19 @@ router.get('/:id/edit', function(req, res) {
 			});
 });
 
+
 //======================
 // UPDATE
 //======================
 //create a PUT "/:id" route that saves the changes from the restaurant.
 router.put('/:id', function(req, res) {
-	Restaurant.findById(req.params.id)
+	Restaurant.findByIdAndUpdate(req.params.id)
 		.exec(function(err, restaurant) {
 			if (err) { console.log(err); }
 			restaurant.name = req.body.name;
 			restaurant.location = req.body.location;
 			restaurant.type = req.body.type;
+			restaurant.description = req.body.description;
 			restaurant.imgUrl = req.body.imgUrl;
 			restaurant.food = req.body.food;
 			restaurant.save();
@@ -75,6 +78,7 @@ router.put('/:id', function(req, res) {
 			restaurantToEdit.name = req.body.name;
 			restaurantToEdit.location = req.body.location;
 			restaurantToEdit.type = req.body.type;
+			restaurantToEdit.description = req.body.description;
 			restaurantToEdit.imgUrl = req.body.imgUrl;
 			restaurantToEdit.food = req.body.food;
 			user.save();

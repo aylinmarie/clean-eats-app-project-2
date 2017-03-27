@@ -15,7 +15,7 @@
 		<br>
 		<li><a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit"><img src="{{this.imgUrl}}" alt="Restaurant Image"></a></li>
 		<li><b>Location:</b> {{this.location}}</li>
-		<li><b>Type:</b> {{this.type}}</li>
+		<li><b>Type:</b> {{this.food}}</li>
 
 		<form action="/users/{{../user.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
 			<input class="btn btn-danger list-delete" type="submit" value="Delete This">
@@ -30,29 +30,34 @@
 
 <hr>
 
-<div class="container-fluid add-rest">
+<div class="container add-rest">
 
 <h3>Add Restaurant</h3>
+<br>
 <form action="/users/{{user.id}}/restaurants" method="POST">
 	<div>
-		<label for="name">Name: </label>
+		<label for="name">Name: </label><br>
 		<input type="text" name="name">
 	</div>
 	<div>
-		<label for="location">Location:</label>
+		<label for="location">Location:</label><br>
 		<input type="text" name="location">
 	</div>
 	<div>
-		<label for="type">Type:</label>
+		<label for="type">Type:</label><br>
 		<input type="text" name="type">
 	</div>
 	<div>
-		<label for="imgUrl">Image URL:</label>
+		<label for="imgUrl">Image URL:</label><br>
 		<input type="text" name="imgUrl">
 	</div>
 	<div>
-		<label for="description">Description:</label>
+		<label for="description">Description:</label><br>
 		<input type="text" name="description">
+	</div>
+	<div>
+		<label for="food">Food Type:</label><br>
+		<input type="text" name="food">
 	</div>
 	<div>
 		<input class="btn btn-primary" type="submit" value="Add Restaurant">
