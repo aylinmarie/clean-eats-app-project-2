@@ -1,1 +1,1 @@
-# project-2
+# WDI Project #2 - Clean Eats
