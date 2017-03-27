@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/project-2');
+mongoose.createConnection('mongodb://localhost/project-2');
 var Restaurant = require("./models/restaurant");
 var User = require("./models/user");
 
