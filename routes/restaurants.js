@@ -70,18 +70,18 @@ router.put('/:id', function(req, res) {
 			restaurant.imgUrl = req.body.imgUrl;
 			restaurant.food = req.body.food;
 			restaurant.save();
-		});
-	User.findById(req.params.userId)
-		.exec(function(err, user) {
-			if (err) { console.log(err); }
-			var restaurantToEdit = user.restaurant.id(req.params.id);
-			restaurantToEdit.name = req.body.name;
-			restaurantToEdit.location = req.body.location;
-			restaurantToEdit.type = req.body.type;
-			restaurantToEdit.description = req.body.description;
-			restaurantToEdit.imgUrl = req.body.imgUrl;
-			restaurantToEdit.food = req.body.food;
-			user.save();
+	// 	});
+	// User.findById(req.params.userId)
+	// 	.exec(function(err, user) {
+	// 		if (err) { console.log(err); }
+	// 		var restaurantToEdit = user.restaurant.id(req.params.id);
+	// 		restaurantToEdit.name = req.body.name;
+	// 		restaurantToEdit.location = req.body.location;
+	// 		restaurantToEdit.type = req.body.type;
+	// 		restaurantToEdit.description = req.body.description;
+	// 		restaurantToEdit.imgUrl = req.body.imgUrl;
+	// 		restaurantToEdit.food = req.body.food;
+	// 		user.save();
 			res.redirect(`/users/${req.params.userId}`);
 		});
 });
