@@ -1,3 +1,5 @@
+/*General*/
+
 html {
   margin: 0 auto;
   padding: 0px;
@@ -26,45 +28,8 @@ p {
   line-height: 2em;
 }
 
-.container-fluid {
-  padding: 40px;
-}
-
-.logo {
-  text-align: left;
-}
-
-.actions form{
-  text-align: right;
-  float: right;
-  display: inline;
-  center-y: == ::window[center-y];
-  size: == ::[intrinsic-size];
-}
-
-.actions {
-  height: 100px;
-  top: 30px;
-  }
-
-.actions input.btn:hover, .btn-default:hover {
-  border: 1px solid #166b24;
-  color: #166b24;
-}
-
-form.btn input {
-  text-transform: uppercase !important;
-  font-weight: bold;
-  font-size: 10px;
-  letter-spacing: .1em;
-  padding: 10px 50px 10px 50px;
-
-}
-
-.list {
-  padding-top: 40px;
-  list-style-type: none;
-
+hr {
+  margin: 10px
 }
 
 .btn {
@@ -111,6 +76,75 @@ h5, h6 {
   font-weight: 500;
 }
 
+.container-fluid {
+  padding: 40px;
+}
+
+/*Layout*/
+
+.logo {
+  text-align: left;
+}
+
+.actions form{
+  text-align: right;
+  float: right;
+  display: inline;
+  center-y: == ::window[center-y];
+  size: == ::[intrinsic-size];
+}
+
+nav {
+  margin: 0 auto;
+  padding: 20px;
+  background: #eeeeee;
+
+}
+
+.actions {
+  height: 100px;
+  top: 30px;
+  }
+
+.actions input.btn:hover, .btn-default:hover {
+  border: 1px solid #166b24;
+  color: #166b24;
+}
+
+form.btn input {
+  text-transform: uppercase !important;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: .1em;
+  padding: 10px 50px 10px 50px;
+
+}
+
+.list {
+  padding-top: 40px;
+  list-style-type: none;
+
+}
+
+
+
+footer, footer a {
+  margin: 0 auto;
+  text-transform: uppercase !important;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: .15em;
+  background: #eeeeee;
+
+}
+footer {
+  padding: 50px;
+}
+
+
+
+/*Homepage*/
+
 .homepage.bg {
   background-image: url("https://source.unsplash.com/C1fMH2Vej8A");
   width: 100%;
@@ -143,41 +177,18 @@ h5, h6 {
 }
 
 .btn.enter:hover {
-  background-color: white;
+  background-color: #166b24;
+  color:white;
 }
+
+/*About*/
 
 .about {
   max-width: 800px;
 }
 
-nav {
-  margin: 0 auto;
-  padding: 20px;
-  background: #eeeeee;
 
-}
-
-footer, footer a {
-  margin: 0 auto;
-  text-transform: uppercase !important;
-  font-weight: bold;
-  font-size: 10px;
-  letter-spacing: .15em;
-  background: #eeeeee;
-
-}
-footer {
-  padding: 50px;
-}
-
-.btn-website {
-  background-color: #166b24;
-  color: white;
-}
-
-hr {
-  margin: 10px
-}
+/*Restaurant Main*/
 
 div.restaurant-list-item.row {
   display: inline-block;
@@ -207,10 +218,6 @@ div.restaurant-list-item.row {
   width: 300px;
   height: 220px;
   overflow: hidden;
-}
-
-.restaurant-list-item .col:hover {
-  opacity: .5;
 }
 
 .atlanta.bg {
@@ -254,4 +261,11 @@ div.restaurant-list-item.row {
   opacity: 1;
   z-index: 1;
   margin: 150px 0px 150px 0px;
+}
+
+/*Restaurant Profile*/
+
+.btn-website {
+  background-color: #166b24;
+  color: white;
 }
