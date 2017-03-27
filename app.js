@@ -1,6 +1,7 @@
 pry = require('pryjs');
 var express = require('express');
 var mongoose = require('mongoose');
+var mongodb = require("mongodb");
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -10,7 +11,7 @@ var session = require('express-session');
 var methodOverride = require('method-override');
 var http = require ('http');
 var db = mongoose.connection;
-mongoose.promise = global.Promise
+mongoose.promise = global.Promise;
 
 var index = require('./routes/index');
 var users = require('./routes/users');
