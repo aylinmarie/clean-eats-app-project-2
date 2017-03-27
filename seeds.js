@@ -40,7 +40,7 @@ var kaleMe = new Restaurant({
     type: 'Juice Bar',
     imgUrl: 'http://amateurgastronomer.com/index/wp-content/uploads/2013/06/KMC-interior.jpeg',
     description: 'Kale Me Crazy is a superfood café. We offer juices, smoothies, salads, and wraps in a sleek, upscale environment.',
-    food: 'Vegan, Gluten Intolerance, Paleo, Low Sodium, Weight Loss, Lactose Intolerant'
+    food: 'Vegan, Gluten Intolerance, Paleo, Lactose Intolerant'
 });
 
 var herbanFix = new Restaurant({
@@ -49,7 +49,7 @@ var herbanFix = new Restaurant({
     type: 'Pan Asian',
     imgUrl: 'https://cmgajcfoodandmore.files.wordpress.com/2015/12/homepage_topbackground.jpg',
     description: 'Herban Fix is an Atlanta vegan restaurant located in Midtown Atlanta and we are cuisine enthusiasts that want to share amazing vegan food with you.',
-    food: 'Vegan, Low Sodium, Weight Loss, Lactose Intolerant'
+    food: 'Vegan, Lactose Intolerant'
 });
 
 var trueFood = new Restaurant({
@@ -58,7 +58,7 @@ var trueFood = new Restaurant({
     type: 'Variety',
     imgUrl: 'http://www.truefoodkitchen.com/wp-content/uploads/2013/03/mg_90501.jpg',
     description: 'Relaxed, eco-chic chain serving health-conscious fare, including vegan options, plus cocktails.',
-    food: 'Vegan, Paleo, Gluten Intolerance, Low Sodium, Weight Loss, Lactose Intolerant'
+    food: 'Vegan, Paleo, Gluten Intolerance, Lactose Intolerant'
 });
 
 var desta = new Restaurant({
@@ -76,7 +76,7 @@ var urbanpl8 = new Restaurant({
     type: 'American',
     imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/wXXg3_CVlZ32r3POL-eduA/o.jpg',
     description: 'Food stall serving health-conscious, paleo & gluten-free American dishes with global flavors.',
-    food: 'Paleo, Gluten Intolerance, Digestion Sensitivity + Soft Foods, Low Sodium, Weight Loss, Lactose Intolerant'
+    food: 'Paleo, Gluten Intolerance, Digestion Sensitivity + Soft Foods, Lactose Intolerant'
 });
 
 var juiceBar = new Restaurant({
@@ -85,7 +85,7 @@ var juiceBar = new Restaurant({
     type: 'Juice Bar',
     imgUrl: 'https://source.unsplash.com/iQISyMFR0RM',
     description: 'Juice Bar is overwhelmingly vegetarian, gluten-free, organic when possible, and always uses 100% whole fruits and vegetables.',
-    food: 'Vegan, Paleo, Low Sodium, Weight Loss, Lactose Intolerant'
+    food: 'Vegan, Paleo, Lactose Intolerant'
 });
 
 var seasons52 = new Restaurant({
@@ -94,7 +94,7 @@ var seasons52 = new Restaurant({
     type: 'American',
     imgUrl: 'http://restaurantweek.shopcoralgables.com/wp-content/uploads/2015/04/Seasons-52-011.jpg',
     description: 'Rotating menu of seasonal American dishes alongside international wines in an upscale setting.',
-    food: 'Vegetarian, Weight Loss'
+    food: 'Vegetarian'
 });
 
 var rthomas = new Restaurant({
