@@ -285,6 +285,18 @@ div.restaurant-list-item.row {
   margin: 150px 0px 150px 0px;
 }
 
+/*Restaurant User Logged In*/
+
+.list img {
+  width: 250px;
+  overflow: hidden;
+}
+
+.list img:hover {
+  opacity: .5;
+}
+
+
 /*Restaurant Profile*/
 
 .btn-website {

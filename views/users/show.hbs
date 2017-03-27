@@ -11,7 +11,9 @@
 
 	<h6>{{#each restaurants}}</h6>
 
-		<li><h3><a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit">{{this.name}}</a></h3></li>
+		<li><h3>{{this.name}}</h3></li>
+		<br>
+		<li><a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit"><img src="{{this.imgUrl}}" alt="Restaurant Image"></a></li>
 		<li><b>Location:</b> {{this.location}}</li>
 		<li><b>Type:</b> {{this.type}}</li>
 
