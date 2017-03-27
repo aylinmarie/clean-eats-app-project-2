@@ -1,7 +1,6 @@
 pry = require('pryjs');
 var express = require('express');
 var mongoose = require('mongoose');
-var mongodb = require("mongodb");
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -9,9 +8,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var methodOverride = require('method-override');
-var http = require ('http');
-var db = mongoose.connection;
-mongoose.promise = global.Promise;
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -19,22 +15,8 @@ var users = require('./routes/users');
 var app = express();
 
 
-// Connect to DB for Heroku
-if (process.env.MONGODB_URI) {
-  mongoose.connect(process.env.MONGODB_URI);
-}
-else {
-  mongoose.connect('mongodb://localhost/project-2');
-}
-
-mongoose.connection.on('error', function(err) {
-  console.error('MongoDB connection error: ' + err);
-  process.exit(-1);
-  }
-);
-mongoose.connection.once('open', function() {
-  console.log("Mongoose has connected to MongoDB!");
-});
+mongoose.connect('mongodb://localhost/project-2');
+var db = mongoose.connection;
 
 // Controllers
 var usersController = require('./routes/users.js');

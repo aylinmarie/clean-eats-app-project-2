@@ -1,26 +1,10 @@
+
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect('mongodb://localhost/project-2');
 var Restaurant = require("./models/restaurant");
 var User = require("./models/user");
 
 mongoose.promise = global.Promise;
-
-// Connect to DB for Heroku
-if (process.env.MONGODB_URI) {
-  mongoose.connect(process.env.MONGODB_URI);
-}
-else {
-  mongoose.connect('mongodb://localhost/project-2');
-}
-
-mongoose.connection.on('error', function(err) {
-  console.error('MongoDB connection error: ' + err);
-  process.exit(-1);
-  }
-);
-mongoose.connection.once('open', function() {
-  console.log("Mongoose has connected to MongoDB!");
-});
 
 // DATA
 
@@ -66,6 +50,30 @@ var urbanpl8 = new Restaurant({
     type: 'American',
     imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/wXXg3_CVlZ32r3POL-eduA/o.jpg',
     description: 'Food stall serving health-conscious, paleo & gluten-free American dishes with global flavors.'
+});
+
+var juiceBar = new Restaurant({
+    name: 'The Juice Bar',
+    location: 'Atlanta',
+    type: 'American',
+    imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/wXXg3_CVlZ32r3POL-eduA/o.jpg',
+    description: 'Food stall serving health-conscious, paleo & gluten-free American dishes with global flavors.'
+});
+
+var seasons52 = new Restaurant({
+    name: 'Seasons52',
+    location: 'Atlanta',
+    type: 'American',
+    imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/wXXg3_CVlZ32r3POL-eduA/o.jpg',
+    description: 'Rotating menu of seasonal American dishes alongside international wines in an upscale setting.'
+});
+
+var rthomas = new Restaurant({
+    name: 'R. Thomas',
+    location: 'Atlanta',
+    type: 'American',
+    imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/wXXg3_CVlZ32r3POL-eduA/o.jpg',
+    description: 'Funky outdoor spot open 24/7 for organic menu of burgers & vegetarian fare amid greenery & birds.'
 });
 
 

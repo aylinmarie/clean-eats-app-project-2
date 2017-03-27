@@ -203,6 +203,12 @@ div.restaurant-list-item.row {
   padding: 0px 0px 50px 0px;
 }
 
+.restaurant-list-item img {
+  width: 300px;
+  height: 220px;
+  overflow: hidden;
+}
+
 .restaurant-list-item .col:hover {
   opacity: .5;
 }
