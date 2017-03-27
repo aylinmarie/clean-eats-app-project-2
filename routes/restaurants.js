@@ -20,7 +20,9 @@ router.post('/', function(req, res) {
 			var newRestaurant = new Restaurant({
 				name: req.body.name,
 				location: req.body.location,
-				type: req.body.type
+				type: req.body.type,
+				imgUrl: req.body.imgUrl,
+				food: req.body.food
 			});
 			newRestaurant.save();
 			user.restaurant.push(newRestaurant);
@@ -62,6 +64,8 @@ router.put('/:id', function(req, res) {
 			restaurant.name = req.body.name;
 			restaurant.location = req.body.location;
 			restaurant.type = req.body.type;
+			restaurant.imgUrl = req.body.imgUrl;
+			restaurant.food = req.body.food;
 			restaurant.save();
 		});
 	User.findById(req.params.userId)
@@ -71,6 +75,8 @@ router.put('/:id', function(req, res) {
 			restaurantToEdit.name = req.body.name;
 			restaurantToEdit.location = req.body.location;
 			restaurantToEdit.type = req.body.type;
+			restaurantToEdit.imgUrl = req.body.imgUrl;
+			restaurantToEdit.food = req.body.food;
 			user.save();
 			res.redirect(`/users/${req.params.userId}`);
 		});

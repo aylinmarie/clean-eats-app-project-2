@@ -307,4 +307,14 @@ div.restaurant-list-item.row {
 .breadcrumb a, .breadcrumb {
   font-weight: 400;
   margin-bottom: 50px;
+  text-align: left;
+  background-color: transparent;
+}
+
+.list-group-item-success {
+  text-align: center;
+}
+
+.container.add-restaurant {
+  max-width: 450px;
 }

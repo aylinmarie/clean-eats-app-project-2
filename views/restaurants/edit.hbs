@@ -1,12 +1,12 @@
 <div class="container-fluid">
 
-<div class="container top-edit">
-
 	<ol class="breadcrumb">
 	  <li><a href="/users">Home</a></li>
 	  <li><a href="/users/{{user.id}}">Restaurants</a></li>
 	  <li class="active">{{restaurant.name}}</li>
 	</ol>
+
+<div class="container top-edit">
 
 <h2>{{restaurant.name}}</h2>
 <h5>Restaurant Profile</h5>
@@ -15,11 +15,14 @@
 <img src="{{restaurant.imgUrl}}" width="300px">
 <br>
 <p><b>{{restaurant.type}}</b></p>
-<p>{{restaurant.description}}</p>
+<p>{{restaurant.description}}</p><br>
 
-	<form action="">
+<p class="list-group-item-success">{{restaurant.food}}</p>
+<br>
+
+	<!-- <form action="">
 		<input class="btn btn-website" type="submit" value="Visit Website">
-	</form>
+	</form> -->
 
 	<form action="/users/{{user.id}}">
 		<input class="btn btn-default" type="submit" value="Go Back">
@@ -27,31 +30,47 @@
 
 </div>
 <hr>
-<div class="container-fluid">
+<div class="container add-restaurant">
 
 <h5>Have changes?</h5>
-
+<br>
 <form action="/users/{{user.id}}/restaurants/{{restaurant.id}}?_method=PUT" method="POST">
 	<div>
-		<label for="name">Name: </label>
+		<label for="name">Name: </label><Br>
 		<input type="text" name="name" value="{{restaurant.name}}">
 	</div>
 	<div>
-		<label for="location">Location: </label>
+		<label for="location">Location: </label><br>
 		<input type="text" name="location" value="{{restaurant.location}}">
 	</div>
 	<div>
-		<label for="type">Type: </label>
+		<label for="type">Type: </label><br>
 		<input type="text" name="type" value="{{restaurant.type}}">
 	</div>
 	<div>
-		<label for="imgUrl">Image URL:</label>
+		<label for="imgUrl">Image URL:</label><br>
 		<input type="text" name="imgUrl" value="{{restaurant.imgUrl}}">
 	</div>
 	<div>
-		<label for="description">Description:</label>
+		<label for="description">Description:</label><br>
 		<input type="text" name="description" value="{{restaurant.description}}">
 	</div>
+
+<div>
+
+	<label for="food">Food Type:</label><br>
+	<div class="checkbox">
+	  <label><input type="checkbox" value="{{restaurant.food}}">Vegan</label>
+	</div>
+	<div class="checkbox">
+	  <label><input type="checkbox" value="{{restaurant.food}}">Vegetarian</label>
+	</div>
+	<div class="checkbox">
+	  <label><input type="checkbox" value="{{restaurant.food}}">Paleo</label>
+	</div>
+</div>
+
+<br>
 	<div>
 		<input class="btn btn-warning" type="submit" value="Update Restaurant">
 	</div>
