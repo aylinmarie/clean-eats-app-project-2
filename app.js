@@ -8,6 +8,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var methodOverride = require('method-override');
+var http = require ('http');
 var db = mongoose.connection;
 mongoose.promise = global.Promise
 
@@ -24,6 +25,7 @@ if (process.env.MONGODB_URI) {
 else {
   mongoose.connect('mongodb://localhost/project-2');
 }
+
 mongoose.connection.on('error', function(err) {
   console.error('MongoDB connection error: ' + err);
   process.exit(-1);

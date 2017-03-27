@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.createConnection('mongodb://localhost/project-2');
+mongoose.connect(process.env.MONGODB_URI);
 var Restaurant = require("./models/restaurant");
 var User = require("./models/user");
 
@@ -12,6 +12,7 @@ if (process.env.MONGODB_URI) {
 else {
   mongoose.connect('mongodb://localhost/project-2');
 }
+
 mongoose.connection.on('error', function(err) {
   console.error('MongoDB connection error: ' + err);
   process.exit(-1);
