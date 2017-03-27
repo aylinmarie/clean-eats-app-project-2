@@ -8,6 +8,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var methodOverride = require('method-override');
+var db = mongoose.connection;
+mongoose.promise = global.Promise
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -15,7 +17,7 @@ var users = require('./routes/users');
 var app = express();
 
 
-// Connect to database
+// Connect to DB
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
 }
