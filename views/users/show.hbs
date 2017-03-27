@@ -11,11 +11,9 @@
 
 	<h6>{{#each restaurants}}</h6>
 
-		<li><h3>{{this.name}}</h3></li>
-		<br>
-		<li><a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit"><img src="{{this.imgUrl}}" alt="Restaurant Image"></a></li>
-		<li><b>Location:</b> {{this.location}}</li>
-		<li><b>Type:</b> {{this.food}}</li>
+		<li><h3>{{this.name}}</h3></li><br>
+		<li><a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit"><img src="{{this.imgUrl}}" alt="Restaurant Image"></a></li><br>
+		<li><h6><b>{{this.location}}</b></h6> {{this.food}}</li><br>
 
 		<form action="/users/{{../user.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
 			<input class="btn btn-danger list-delete" type="submit" value="Delete This">
