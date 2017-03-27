@@ -1,5 +1,7 @@
 # Clean Eats - WDI Project #2
 
+![Landing Screenshot](https://github.com/aylinmarie/project-2/blob/master/public/images/Landing%20Page.png?raw=true)
+
 ## Overview
 Clean Eats brings all of your favorite restaurants together to quickly find the healthiest dishes that work for you. Whether you have meal preferences or dietary restrictions, we found a way to make that search easier for you. 
 
