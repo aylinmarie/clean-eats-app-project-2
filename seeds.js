@@ -53,15 +53,15 @@ var urbanpl8 = new Restaurant({
 });
 
 var juiceBar = new Restaurant({
-    name: 'The Juice Bar',
+    name: 'Juice Bar Suwanee',
     location: 'Atlanta',
-    type: 'American',
+    type: 'Juice Bar',
     imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/wXXg3_CVlZ32r3POL-eduA/o.jpg',
-    description: 'Food stall serving health-conscious, paleo & gluten-free American dishes with global flavors.'
+    description: 'Juice Bar is overwhelmingly vegetarian, gluten-free, organic when possible, and always uses 100% whole fruits and vegetables.'
 });
 
 var seasons52 = new Restaurant({
-    name: 'Seasons52',
+    name: 'Seasons 52',
     location: 'Atlanta',
     type: 'American',
     imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/wXXg3_CVlZ32r3POL-eduA/o.jpg',
@@ -100,4 +100,19 @@ desta.save(function(err) {
 urbanpl8.save(function(err) {
   if (err) console.log(err);
   console.log('urban pl8 created!');
+});
+
+juiceBar.save(function(err) {
+  if (err) console.log(err);
+  console.log('true food created!');
+});
+
+seasons52.save(function(err) {
+  if (err) console.log(err);
+  console.log('urban pl8 created!');
+});
+
+rthomas.save(function(err) {
+  if (err) console.log(err);
+  console.log('desta created!');
 });

@@ -30,25 +30,32 @@
 			{{restaurants.5.name}}<br>
 			<img src="{{restaurants.5.imgUrl}}" width="300px">
 		</div>
+		<div class="col col-md-3">
+			{{restaurants.6.name}}<br>
+			<img src="{{restaurants.6.imgUrl}}" width="300px">
+		</div>
+		<div class="col col-md-3">
+			{{restaurants.7.name}}<br>
+			<img src="{{restaurants.7.imgUrl}}" width="300px">
+		</div>
 
-
-
-
-		<!-- {{#each restaurants}}
-			<br>
-			{{this.name}}
-			<br>
-			<img src="{{this.imgUrl}}" width="300px">
-			<br>
-		{{/each}} -->
 </div>
 
 <hr>
 <div class="container-fluid">
 	<h5>Want to see more? </h5>
-		<p>Sign up above to customize your favorite restaurants for what works for you!</p>
+		<p>Sign up to customize your favorite restaurants for what works for you!</p>
+
+		<form action="/users/signup">
+			<input type="submit" value="Sign Up" class="btn btn-default">
+		</form>
+
+		<form action="/sessions/login">
+			<input type="submit" value="Login" class="btn btn-default">
+		</form>
 
 </div>
+
 
 <div class="container-fluid nyc bg"></div>
 	<div class="nyc-header">
