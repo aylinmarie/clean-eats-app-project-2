@@ -17,7 +17,7 @@ var users = require('./routes/users');
 var app = express();
 
 
-// Connect to DB
+// Connect to DB for Heroku
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
 }
