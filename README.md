@@ -25,7 +25,7 @@ Clean Eats brings all of your favorite restaurants together to quickly find the 
 ## Portfolio
 + [Original Website](https://www.aylinmarie.co)
 
-+ [Class Website](https://aylinmarie.github.io/Aylin-Portfolio/)
++ [Class Website](https://aylinmarie.github.io/Aylin-Marie-Portfolio/)
 
 ## Wireframes
 ### Initial Sketches
