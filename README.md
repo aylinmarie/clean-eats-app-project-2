@@ -35,6 +35,7 @@ Clean Eats brings all of your favorite restaurants together to quickly find the 
 ![ERD](https://github.com/aylinmarie/project-2/blob/master/public/images/ERD.jpg?raw=true)
 
 ## Portfolio
-[Original Website:](https://www.aylinmarie.co)
-[Class Website:](https://aylinmarie.github.io/Aylin-Portfolio/)
++ [Original Website](https://www.aylinmarie.co)
+
++ [Class Website](https://aylinmarie.github.io/Aylin-Portfolio/)
 
