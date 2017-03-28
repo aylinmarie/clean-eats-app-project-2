@@ -1,121 +1,74 @@
 <div class="container-fluid show">
-		<div class="actions">
-			<form action="/sessions?_method=DELETE" method="post">
-				<input class="btn btn-default" type="submit" value="logout">
+
+	<div class="actions">
+			<form method="post" action="/sessions?_method=DELETE">
+				<input type="submit" value="logout" class="btn btn-default">
 			</form>
-		</div>
-		<br>
-
-
-		<div class="container show-title">
-			<h2>welcome {{user.firstName}} !</h2>
-			<br>
-
-
-			<h4>personalize your restaurants to fit your needs</h4>
-		</div>
-		<br>
-
-
-		<div class="container-fluid top-show">
-			<hr>
-
-
-			<div class="container-fluid list">
-				<h6>{{#each restaurants}}</h6>
-
-
-				<ul>
-					<li>
-						<h3>{{this.name}}</h3>
-					</li>
-
-
-					<li style="list-style: none"><br>
-					</li>
-
-
-					<li>
-						<a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit"><img alt="Restaurant Image" src=
-						"{{this.imgUrl}}"></a>
-					</li>
-
-
-					<li style="list-style: none"><br>
-					</li>
-
-
-					<li>
-						<h6><b>{{this.location}}</b>
-						</h6>
-						{{this.food}}
-					</li>
-
-
-					<li style="list-style: none">
-						<br>
-
-
-						<form action="/users/{{../user.id}}/restaurants/{{this.id}}?_method=DELETE" method="post">
-							<input class="btn btn-danger list-delete" type="submit" value="Delete This">
-						</form>
-						<br>
-						<br>
-						<br>
-						{{/each}}
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<hr>
-
-
-		<div class="container add-rest">
-			<h3>Add Restaurant</h3>
-			<br>
-
-
-			<form action="/users/{{user.id}}/restaurants" method="post">
-				<div>
-					<label for="name">Name:</label><br>
-					<input name="name" type="text">
-				</div>
-
-
-				<div>
-					<label for="location">Location:</label><br>
-					<input name="location" type="text">
-				</div>
-
-
-				<div>
-					<label for="type">Type:</label><br>
-					<input name="type" type="text">
-				</div>
-
-
-				<div>
-					<label for="imgUrl">Image URL:</label><br>
-					<input name="imgUrl" type="text">
-				</div>
-
-
-				<div>
-					<label for="description">Description:</label><br>
-					<input name="description" type="text">
-				</div>
-
-
-				<div>
-					<label for="food">Food Type:</label><br>
-					<input name="food" type="text">
-				</div>
-
-
-				<div>
-					<input class="btn btn-primary" type="submit" value="Add Restaurant">
-				</div>
-			</form>
-		</div>
 	</div>
+<br>
+<div class="container show-title">
+<h2> welcome {{user.firstName}} !</h2>
+<br>
+<h4>personalize your restaurants to fit your needs</h4>
+</div>
+<br>
+<div class="container-fluid top-show">
+<hr>
+
+<div class="container-fluid list">
+
+	<h6>{{#each restaurants}}</h6>
+
+		<li><h3>{{this.name}}</h3></li><br>
+		<li><a href="/users/{{../user.id}}/restaurants/{{this.id}}/edit"><img src="{{this.imgUrl}}" alt="Restaurant Image"></a></li><br>
+		<li><h6><b>{{this.location}}</b></h6> {{this.food}}</li><br>
+
+		<form action="/users/{{../user.id}}/restaurants/{{this.id}}?_method=DELETE" method="POST">
+			<input class="btn btn-danger list-delete" type="submit" value="Delete This">
+		</form>
+		<br>
+		<br>
+		<br>
+	{{/each}}
+
+</div>
+</div>
+
+<hr>
+
+<div class="container add-rest">
+
+<h3>Add Restaurant</h3>
+<br>
+<form action="/users/{{user.id}}/restaurants" method="POST">
+	<div>
+		<label for="name">Name: </label><br>
+		<input type="text" name="name">
+	</div>
+	<div>
+		<label for="location">Location:</label><br>
+		<input type="text" name="location">
+	</div>
+	<div>
+		<label for="type">Type:</label><br>
+		<input type="text" name="type">
+	</div>
+	<div>
+		<label for="imgUrl">Image URL:</label><br>
+		<input type="text" name="imgUrl">
+	</div>
+	<div>
+		<label for="description">Description:</label><br>
+		<input type="text" name="description">
+	</div>
+	<div>
+		<label for="food">Food Type:</label><br>
+		<input type="text" name="food">
+	</div>
+	<div>
+		<input class="btn btn-primary" type="submit" value="Add Restaurant">
+	</div>
+</form>
+
+</div>
+</div>
