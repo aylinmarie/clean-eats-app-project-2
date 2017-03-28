@@ -13,14 +13,15 @@ Clean Eats brings all of your favorite restaurants together to quickly find the 
 
 ## Wireframes
 ### Initial Sketches
-![Paper Sketch](# "paper sketch")
 
-### Sketch Wireframe
-![Landing Page](https://github.com/aylinmarie/project-2/blob/master/public/images/Homepage%20Sketch.jpg?raw=true "Landing page")
+![Landing Page](https://github.com/aylinmarie/project-2/blob/master/public/images/Homepage%20Sketch.jpg?raw=true)
 
-![Restaurant Page](# "Restaurant page")
+![Restaurant Page](https://github.com/aylinmarie/project-2/blob/master/public/images/Restaurant%20List%20Sketch.jpg?raw=true)
 
-![Restaurant Edit Page](# "Restaurant Edit page")
+![Restaurant Edit Page](https://github.com/aylinmarie/project-2/blob/master/public/images/Restaurant%20Profile%20Sketch.jpg?raw=true)
+
+## ERD 
+![ERD](https://github.com/aylinmarie/project-2/blob/master/public/images/ERD.jpg?raw=true)
 
 ## Technologies 
 * Languages - HTML, CSS, Node.js, Express.js, MongoDB
