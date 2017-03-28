@@ -22,6 +22,11 @@ Clean Eats brings all of your favorite restaurants together to quickly find the 
 * Show specific dishes that are "Clean Eats" friendly for each restaurant
 * Include a settings button for the user to update their personal information
 
+## Portfolio
++ [Original Website](https://www.aylinmarie.co)
+
++ [Class Website](https://aylinmarie.github.io/Aylin-Portfolio/)
+
 ## Wireframes
 ### Initial Sketches
 
@@ -34,8 +39,5 @@ Clean Eats brings all of your favorite restaurants together to quickly find the 
 ## ERD 
 ![ERD](https://github.com/aylinmarie/project-2/blob/master/public/images/ERD.jpg?raw=true)
 
-## Portfolio
-+ [Original Website](https://www.aylinmarie.co)
 
-+ [Class Website](https://aylinmarie.github.io/Aylin-Portfolio/)
 
