@@ -23,7 +23,7 @@ Clean Eats brings all of your favorite restaurants together to quickly find the 
 ![Restaurant Edit Page](# "Restaurant Edit page")
 
 ## Technologies 
-* Languages - HTML, CSS, Node.js, Express.js, MongoDB, Heroku
+* Languages - HTML, CSS, Node.js, Express.js, MongoDB
 * Design - Google Fonts, Bootstrap
 * Project Planning + User Stories - Trello
 * Atom Text Editor
