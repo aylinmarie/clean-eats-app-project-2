@@ -39,5 +39,9 @@ Clean Eats brings all of your favorite restaurants together to quickly find the 
 ## ERD 
 ![ERD](https://github.com/aylinmarie/project-2/blob/master/public/images/ERD.jpg?raw=true)
 
+User = { firstName: String, lastName: String, email: String, password_digest: String, restaurant: [RestaurantSchema], created_at: Date, updated_at: Date }
+
+Restaurant = { name: String, location: String, type: String, imgUrl: String, description: String, food: String }
+
 
 
