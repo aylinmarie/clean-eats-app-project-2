@@ -1,5 +1,11 @@
 <div class="container-fluid show">
 
+	<div class="col actions">
+
+			<form method="post" action="/sessions?_method=DELETE">
+				<input type="submit" value="logout" class="btn btn-default">
+			</form>
+	</div>
 
 <h2> welcome {{user.firstName}} !</h2>
 <br>

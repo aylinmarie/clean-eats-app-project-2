@@ -97,8 +97,7 @@ h5, h6 {
 }
 
 .actions form{
-  text-align: right;
-  float: right;
+  /*float: right;*/
   display: inline;
   center-y: == ::window[center-y];
   size: == ::[intrinsic-size];
@@ -114,7 +113,29 @@ nav {
 .actions {
   height: 100px;
   top: 30px;
-  }
+  float: right;
+  font-size: 12px;
+}
+
+.actions a {
+  margin-right: 25px;
+  letter-spacing: .3em;
+  font-weight: 300;
+}
+
+.actions button {
+  font-size: 12px;
+  background-color: transparent;
+  border: 2px solid #166b24;
+  border-radius: 20px;
+  font-weight: 300;
+}
+
+.actions button:hover {
+  color: white;
+  background-color: #166b24;
+
+}
 
 .actions input.btn:hover, .btn-default:hover {
   border: 1px solid #166b24;
