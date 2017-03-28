@@ -1,27 +1,34 @@
-<div class="container-fluid signup">
-  <h2> Sign Up </h2>
-<br>
-  <form action="/users" method="post">
-    <div>
-      <label for="email">email</label><br>
-      <input type="text" name="email">
-    </div>
 
-    <div>
-      <label for="firstName">first name</label><br>
-      <input type="text" name="firstName">
-    </div>
+<body>
+	<div class="container-fluid signup">
+		<h2>Sign Up</h2>
+		<br>
 
-    <div>
-      <label for="lastName">last name</label><br>
-      <input type="text" name="lastName">
-    </div>
 
-    <div>
-      <label for="password">password</label><br>
-      <input type="text" name="password">
-    </div>
+		<form action="/users" method="post">
+			<div>
+				<label for="email">email</label><br>
+				<input name="email" type="text">
+			</div>
 
-    <input class="btn btn-default" type="submit" value="Submit">
-  </form>
-</div>
+
+			<div>
+				<label for="firstName">first name</label><br>
+				<input name="firstName" type="text">
+			</div>
+
+
+			<div>
+				<label for="lastName">last name</label><br>
+				<input name="lastName" type="text">
+			</div>
+
+
+			<div>
+				<label for="password">password</label><br>
+				<input name="password" type="text">
+			</div>
+			<input class="btn btn-default" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
